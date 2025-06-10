@@ -5,6 +5,10 @@
 
   background-color: var(--background-color);
   background-attachment: fixed;
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: var(--font-family);
   font-size: var(--font-size);
   min-inline-size: 375px;
@@ -12,14 +16,14 @@
 }
 
 /* Хедер */
+
+
 .header {
   width: 100%;
   height: 100vh;
+  min-height: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  background-image: var(--background-image);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px;
   position: relative;
 }
@@ -36,7 +40,7 @@
 .header__theme-menu-list {
   display: grid;
   justify-content: center;
-  gap: 8px;
+  gap: 9px;
 }
 
 /* кнопки меню и их состояния */
@@ -49,20 +53,26 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--decor-color);
+  border: 1px solid var(--transparent-color);
 }
 
 .header__theme-menu-button:focus {
+  outline: none;
   border-top: transparent;
-  border-right: transparent;
-  border-left: transparent;
-  border-bottom: 1px solid var(--decor-color);
-}
-
-.header__theme-menu-button:focus-visible {
-  border: 1px solid var(--decor-color);
-}
-
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid var(--decor-color);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border: 1px solid var(--decor-color);
+  }
+  
+  .header__theme-menu-button_active {
+    pointer-events: none;
+    border: 1px solid var(--decor-color);
+  
+  }
 /* Заголовок сайта */
 .header__title {
   font-family: var(--font-family);
@@ -70,6 +80,7 @@
   color: var(--header-heading-color);
   text-shadow: 4px 4px var(--accent-color);
   line-height: 83%;
+  justify-content: center;
 }
 
 /* Подзаголовок сайта */
@@ -78,7 +89,6 @@
   line-height: 23.4px;
   color: var(--header-subtitile-color);
   font-weight: 700;
-  max-height: 117px;
   justify-self: center;
   align-self: center;
 }
@@ -186,15 +196,17 @@
   border-top: transparent;
   border-right: transparent;
   border-left: transparent;
-  border-bottom: 1px solid var(--decor-color);
+  border-bottom: 1px solid var(--transparent-color);
 }
 
 .card__text-link:focus {
-  border: 1px solid var(--decor-color);
+  outline: none;
+  border: 1px solid var(--text-color);
 }
 
 .card__text-link:focus-visible {
-  border: 1px solid var(--decor-color);
+  outline: none;
+  border: 1px solid var(--text-color);
 }
 
 /* section 2 */
@@ -233,17 +245,20 @@
   gap: 10px;
 }
 
-.container-image {
+.content__container-image img {
   width: 100%;
   height: auto;
 }
 
 /* footer */
 .footer {
+  height: 100vh;
+  min-height: 668px;
   position: relative;
   text-align: center;
   padding-top: 286px;
   padding-bottom: 285px;
+  /*задать размер и тогда не будут уголки убегать*/
 }
 
 .footer__title {
@@ -251,192 +266,4 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-heading-color);
   text-shadow: 4px 4px var(--accent-color);
-  line-height: 83%
-}
-
-@media (width >=768px) {
-  .header {
-    padding: 20px;
-  }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-left: -20px;
-  }
-
-  .header__text {
-    margin-left: 50%;
-
-  }
-
-  .decorated-zone::before {
-    top: 21px;
-    right: 20px;
-  }
-
-  .decorated-zone::after {
-    left: 21px;
-    bottom: 20px;
-  }
-
-  .decor::before {
-    top: 20px;
-    right: 48px;
-  }
-
-  .decor::after {
-    top: 28px;
-    right: 29px;
-  }
-
-  .main {
-    padding: 0 20px;
-    margin-top: 60px;
-  }
-
-  .content__focus-problems {
-    grid-template-columns: 1fr 2fr;
-    margin-block-end: 79px;
-  }
-
-  .content__focus-problems .card-item:nth-of-type(2) {
-    grid-column: 2;
-  }
-
-  .content__focus-problems .card-item {
-    gap: 8px;
-  }
-
-  .content__concentration-attention {
-    grid-template-rows: repeat(2, min-content);
-    gap: 1px;
-    margin-block-end: 61px;
-  }
-
-  .content__concentration-attention .content__title {
-    margin-right: 512px;
-    margin-bottom: 19px;
-  }
-
-  .content__concentration-attention .card-item {
-    gap: 12px;
-  }
-
-  .content__concentration-attention .card__text {
-    margin-block-start: -3px;
-    margin-block-end: 18px;
-  }
-
-  .content__concentration-attention .card-item:nth-last-child(1) {
-    margin-block-start: -1px;
-  }
-
-  .content__focus-longer {
-    grid-template-columns: 1fr 2fr;
-    gap: 18px;
-    margin-block-end: 82px;
-
-  }
-
-  .content__picture {
-    display: grid;
-    gap: 20px;
-    margin-block-end: 55px;
-  }
-
-  .content__container-image {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-    max-block-size: 780px;
-  }
-
-  .container-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .content__container-image:last-of-type .container-image:first-of-type {
-    grid-column: span 2;
-  }
-
-  .content__container-image:last-of-type .container-image:last-of-type {
-    grid-column: span 2;
-  }
-
-  .content__container-image:last-of-type .container-image:nth-of-type(2) {
-    grid-row: span 2;
-  }
-
-  .content__container-image:last-of-type .container-image:nth-of-type(3) {
-    grid-row: span 2;
-  }
-
-  .footer {
-    padding-top: 465px;
-    padding-bottom: 459px;
-  }
-
-  .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-}
-
-@media (width >=1024px) {
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .content__focus-problems {
-    gap: 10px;
-    margin-block-end: 72px;
-  }
-
-  .content__focus-problems .card-item:not(:first-child) {
-    margin-bottom: 9px;
-  }
-
-  .content__concentration-attention {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    align-self: start;
-    margin-block-end: 81px;
-  }
-
-  .content__concentration-attention .content__title {
-    margin: 0;
-  }
-
-  .content__concentration-attention .card-item {
-    grid-row: 2;
-    display: block;
-  }
-
-  .content__concentration-attention .card__text {
-    margin-block-start: 7px;
-    margin-block-end: 0px;
-  }
-
-  .content__focus-longer {
-    gap: 9px;
-  }
-
-  .content__picture {
-    margin-block-end: 326px;
-  }
-
-  .footer {
-    margin-top: 0px;
-    padding-top: 321px;
-    padding-bottom: 319px;
-  }
 }
