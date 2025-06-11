@@ -26,10 +26,6 @@
   /* цвет декора*/
   --rec-color: #FF0070;
   /* цвет rec */
-  --transparent-color:rgba(255, 0, 112, 0.4); 
+  --transparent-color: rgba(255, 0, 112, 0.4);
   /* прозрачная рамка при ховере */
-
-
-
-
 }

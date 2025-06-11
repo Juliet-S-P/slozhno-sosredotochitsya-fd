@@ -29,7 +29,7 @@
   /* цвет декора*/
   --rec-color: #FFF1F7;
   /* цвет rec */
-    --transparent-color:rgba(50, 49, 45, 0.4); 
+  --transparent-color: rgba(50, 49, 45, 0.4);
   /* прозрачная рамка при ховере */
 
 }
@@ -57,7 +57,7 @@
   /* цвет декора*/
   --rec-color: #FFF1F7;
   /* цвет rec */
-      --transparent-color:rgba(50, 49, 45, 0.4); 
+  --transparent-color: rgba(50, 49, 45, 0.4);
   /* прозрачная рамка при ховере */
 }
 
@@ -87,13 +87,8 @@
     /* цвет декора*/
     --rec-color: #FFF1F7;
     /* цвет rec */
-        --transparent-color:rgba(50, 49, 45, 0.4); 
-  /* прозрачная рамка при ховере */
+    --transparent-color: rgba(50, 49, 45, 0.4);
+    /* прозрачная рамка при ховере */
   }
 
 }
-
-
-
-
-
