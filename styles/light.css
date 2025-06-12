@@ -31,7 +31,6 @@
   /* цвет rec */
   --transparent-color: rgba(50, 49, 45, 0.4);
   /* прозрачная рамка при ховере */
-
 }
 
 .theme-light .page {
@@ -62,7 +61,8 @@
 }
 
 .theme-light .decor {
-  display: none;
+  display: none; 
+  /* убираем рек при светлой теме */
 }
 
 @media (prefers-color-scheme: light) {
@@ -90,5 +90,4 @@
     --transparent-color: rgba(50, 49, 45, 0.4);
     /* прозрачная рамка при ховере */
   }
-
 }
