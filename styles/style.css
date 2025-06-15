@@ -56,14 +56,10 @@
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-top: transparent;
-  border-right: transparent;
-  border-left: transparent;
-  border-bottom: 1px solid var(--decor-color);
 }
 
 .header__theme-menu-button:focus-visible {
-  border: 1px solid var(--decor-color);
+  border-bottom: 1px solid var(--decor-color);
 }
 
 .header__theme-menu-button_active {
@@ -206,21 +202,19 @@
 }
 
 .card__text-link:hover {
-  border-top: transparent;
-  border-right: transparent;
-  border-left: transparent;
   border-bottom: 1px solid var(--text-color);
 }
 
 .card__text-link:focus {
-  outline: none;
-  border: 1px solid var(--text-color);
-}
+   outline: none;
+   border: 1px solid var(--text-color); 
+} 
 
 .card__text-link:focus-visible {
   outline: none;
   border: 1px solid var(--text-color);
 }
+
 
 .card-item-title {
   font-weight: 400;
@@ -242,12 +236,13 @@
 
 /* footer */
 .footer {
-  height: 100vh;
+  height: 100vh; /*добавила 100vh*/
   min-height: 668px;
   position: relative;
   text-align: center;
-  padding-top: 261px;
-  padding-bottom: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer__title {
@@ -299,7 +294,6 @@
   }
 
   .content__section {
-    display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
@@ -373,7 +367,6 @@
 
   .footer {
     min-height: 1024px;
-    padding-top: 435px;
   }
 
   .footer__title {
@@ -385,7 +378,6 @@
 @media (width >=1024px) {
   .header {
     min-height: 768px;
-    padding: 20px;
   }
 
   .header__theme-menu {
@@ -429,6 +421,5 @@
 
   .footer {
     min-height: 768px;
-    padding-top: 282px;
   }
 }

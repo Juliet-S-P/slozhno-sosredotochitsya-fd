@@ -35,38 +35,10 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-
-  --background-image: url(../images/cover-image-light.png);
-  /* картинка в хедере*/
-  --background-color: #FFF1F7;
-  /* Цвет страницы*/
-  --header-heading-color: #FFC2E6;
-  /* Цвет текста названия сайта*/
-  --header-subtitile-color: #353430;
-  /* Цвет текста подзаголовка сайта*/
-  --section-title-color: #353430;
-  /* Цвет текста заголовков секций*/
-  --article-title-color: #353430;
-  /* Цвет текста подзаголовков секций*/
-  --text-color: #353430;
-  /* цвет текста параграфов */
-  --accent-color: #FF8DCB;
-  /* цвет заливки подзаголовков*/
-  --decor-color: #353430;
-  /* цвет декора*/
-  --rec-color: #FFF1F7;
-  /* цвет rec */
-  --transparent-color: rgba(50, 49, 45, 0.4);
-  /* прозрачная рамка при ховере */
-}
-
-.theme-light .decor {
-  display: none; 
-  /* убираем рек при светлой теме */
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root {
     --background-image: url(../images/cover-image-light.png);
     /* картинка в хедере*/
     --background-color: #FFF1F7;
@@ -89,5 +61,11 @@
     /* цвет rec */
     --transparent-color: rgba(50, 49, 45, 0.4);
     /* прозрачная рамка при ховере */
+  }
+
+
+  .theme-light .decor {
+    display: none;
+    /* убираем рек при светлой теме */
   }
 }
