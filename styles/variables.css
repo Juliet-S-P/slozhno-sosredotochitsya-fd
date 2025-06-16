@@ -29,28 +29,3 @@
   --transparent-color: rgba(255, 0, 112, 0.4);
   /* прозрачная рамка при ховере */
 }
-
-:root.theme-dark {
-  --background-image: url(../images/cover-image-dark.png);
-  /* картинка в хедере*/
-  --background-color: #000028;
-  /* Цвет страницы*/
-  --header-heading-color: #DB00FF;
-  /* Цвет текста названия сайта*/
-  --header-subtitile-color: #000028;
-  /* Цвет текста подзаголовка сайта*/
-  --section-title-color: #FF0070;
-  /* Цвет текста заголовков секций*/
-  --article-title-color: #000028;
-  /* Цвет текста подзаголовков секций*/
-  --text-color: #F1B2CE;
-  /* цвет текста параграфов */
-  --accent-color: #FF0070;
-  /* цвет заливки подзаголовков*/
-  --decor-color: #FF0070;
-  /* цвет декора*/
-  --rec-color: #FF0070;
-  /* цвет rec */
-  --transparent-color: rgba(255, 0, 112, 0.4);
-  /* прозрачная рамка при ховере */
-}
