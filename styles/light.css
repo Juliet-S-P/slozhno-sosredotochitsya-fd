@@ -58,8 +58,7 @@
     --transparent-color: rgba(50, 49, 45, 0.4);
     /* прозрачная рамка при ховере */
   }
-
-
+  
   .theme-light .decor {
     display: none;
     /* убираем рек при светлой теме */
