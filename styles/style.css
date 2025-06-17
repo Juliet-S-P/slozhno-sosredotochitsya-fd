@@ -190,12 +190,15 @@
   font-size: var(--font-size);
 }
 
-.card__text {
-  color: var(--text-color);
-  font-size: var(--font-size);
+.card__paragraph {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.card__text {
+  color: var(--text-color);
+  font-size: var(--font-size);
 }
 
 .card__text-link {
@@ -217,12 +220,6 @@
   outline: none;
   border: 1px solid var(--text-color);
 }
-
-.text {
-  color: var(--text-color);
-  font-size: var(--font-size);
-}
-
 
 .card-item-title {
   font-weight: 400;
