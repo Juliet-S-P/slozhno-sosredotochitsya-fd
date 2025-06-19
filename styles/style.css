@@ -229,7 +229,7 @@
 
 .section-picture {
   display: grid;
-  gap: 9px;
+  gap: 10px;
   width: 100%;
   margin-block-start: -10px;
   /*из-за грида и гапа в content__section пришлось добавить отрицательный марджин*/
@@ -304,8 +304,8 @@
   }
 
   .section-why {
-    gap: 16px;
-    margin-bottom: 82px;
+    gap: 19px;
+    margin-bottom: 81px;
   }
 
   .section-causes {
